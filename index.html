@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dev Bot Verse | Agente de IA para WhatsApp que Atende e Agenda Clientes 24/7</title>
+<meta name="description" content="Agente de IA para WhatsApp que atende e agenda clientes 24 horas por dia direto no Google Calendar. Feito para qualquer negócio com agendamento: clínicas, petshops, salões, academias e mais. Automação de processos (RPA) também disponível.">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Dev Bot Verse | Atendimento 24/7 no WhatsApp com IA">
+<meta property="og:description" content="Pare de perder clientes por demora no WhatsApp. Agente de IA que atende e agenda automaticamente, 24 horas por dia, 7 dias por semana.">
+<meta property="og:image" content="assets/logo.png">
+
+<link rel="icon" type="image/png" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Pular para o conteúdo</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a href="#top" class="brand">
+      <img src="assets/logo.png" alt="" class="brand-mark" width="34" height="34">
+      <span class="brand-name">Dev Bot Verse</span>
+    </a>
+
+    <nav class="nav" id="mainNav">
+      <a href="#servicos">Serviços</a>
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#para-quem">Para quem é</a>
+      <a href="#faq">Dúvidas</a>
+    </nav>
+
+    <div class="header-actions">
+      <a class="btn btn-primary btn-sm" href="https://wa.me/5511970855092?text=Oi!%20Quero%20entender%20como%20funciona%20o%20Agente%20de%20IA%20da%20Dev%20Bot%20Verse" target="_blank" rel="noopener">
+        Falar no WhatsApp
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mainNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow">Automação + IA para negócios com agendamento</p>
+        <h1>Seu negócio está perdendo clientes por demorar para responder no WhatsApp.</h1>
+        <p class="hero-sub">
+          A <strong>Dev Bot Verse</strong> cria Agentes de IA que atendem seus clientes no WhatsApp
+          e agendam horários <strong>automaticamente no Google Calendar</strong> — 24 horas por dia,
+          7 dias por semana, mesmo à noite e nos finais de semana.
+        </p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary btn-lg" href="https://wa.me/5511970855092?text=Oi!%20Quero%20entender%20como%20funciona%20o%20Agente%20de%20IA%20da%20Dev%20Bot%20Verse" target="_blank" rel="noopener">
+            Quero entender como funciona <span aria-hidden="true">→</span>
+          </a>
+          <a class="btn btn-ghost btn-lg" href="#como-funciona">Ver como funciona</a>
+        </div>
+        <p class="hero-note">Sem robô engessado. Sem cardápio de opções. Conversa natural, de verdade.</p>
+      </div>
+
+      <div class="hero-visual" aria-hidden="false">
+        <div class="phone">
+          <div class="phone-notch"></div>
+          <div class="chat-app">
+            <div class="chat-header">
+              <span class="chat-back">‹</span>
+              <div class="chat-avatar">CB</div>
+              <div class="chat-title">
+                <strong>Camila | Studio Bella</strong>
+                <small><span class="dot-online"></span> online</small>
+              </div>
+            </div>
+            <div class="chat-body" id="chatBody">
+              <div class="bubble in">Oi, vocês têm horário disponível pra essa semana?</div>
+              <div class="bubble out">Oi! Tudo bem? 😊 Temos sim! Você já é cliente aqui ou seria a primeira vez?</div>
+              <div class="bubble in">Primeira vez</div>
+              <div class="bubble out">Que ótimo! Primeira vez tem 15% de desconto. Já consigo separar um horário essa semana, pode ser?</div>
+              <div class="bubble in">Pode ser sexta de manhã</div>
+              <div class="bubble out">Perfeito! Sexta às 10h ficou reservado no seu nome ✅ Te mando a confirmação por aqui.</div>
+              <div class="bubble typing" id="typingBubble"><span></span><span></span><span></span></div>
+            </div>
+            <div class="chat-inputbar">
+              <span class="chat-emoji">🙂</span>
+              <span class="chat-placeholder">Mensagem</span>
+              <span class="chat-mic">🎤</span>
+            </div>
+          </div>
+        </div>
+        <p class="visual-caption">Simulação de atendimento — assim funciona o Agente de IA da Dev Bot Verse.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOR -->
+  <section class="pain" id="dor">
+    <div class="container">
+      <h2>Toda mensagem sem resposta é um cliente a menos.</h2>
+      <div class="pain-grid">
+        <div class="pain-card">
+          <span class="pain-icon">🌙</span>
+          <h3>Fora do horário, silêncio</h3>
+          <p>À noite e nos finais de semana, quem responde primeiro fecha o horário. Sem alguém de plantão, esse cliente vai para o concorrente.</p>
+        </div>
+        <div class="pain-card">
+          <span class="pain-icon">⏳</span>
+          <h3>Demora custa caro</h3>
+          <p>Poucos minutos de demora já são suficientes para o cliente desistir ou procurar outra opção no Google.</p>
+        </div>
+        <div class="pain-card">
+          <span class="pain-icon">🔁</span>
+          <h3>Equipe sobrecarregada</h3>
+          <p>Seu time perde horas do dia respondendo as mesmas perguntas de valor, horário e endereço — em vez de cuidar de quem já está sendo atendido.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMO FUNCIONA -->
+  <section class="how" id="como-funciona">
+    <div class="container">
+      <p class="eyebrow center">Como funciona</p>
+      <h2 class="center">Um agente de IA que atende como sua melhor recepcionista — só que 24 horas por dia.</h2>
+
+      <div class="how-grid">
+        <div class="how-card">
+          <span class="how-num">01</span>
+          <h3>Atende em segundos</h3>
+          <p>Responde dúvidas sobre valores, serviços, horários e endereço, a qualquer hora, sem deixar o cliente esperando.</p>
+        </div>
+        <div class="how-card">
+          <span class="how-num">02</span>
+          <h3>Agenda no Google Calendar</h3>
+          <p>Marca o horário direto na agenda do negócio, considerando a disponibilidade de cada profissional ou espaço.</p>
+        </div>
+        <div class="how-card">
+          <span class="how-num">03</span>
+          <h3>Faz follow-up</h3>
+          <p>Confirma horários, lembra clientes antes do atendimento e retoma conversas de quem sumiu no meio do caminho.</p>
+        </div>
+        <div class="how-card">
+          <span class="how-num">04</span>
+          <h3>Se conecta ao seu sistema</h3>
+          <p>Integra com CRM, planilhas e dashboards, mantendo tudo organizado sem trabalho manual.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AGENDA AUTOMÁTICA (GOOGLE CALENDAR) -->
+  <section class="calendar-section" id="agenda">
+    <div class="container calendar-inner">
+      <div class="calendar-copy">
+        <p class="eyebrow">Integração com Google Calendar</p>
+        <h2>Enquanto você lê isso, o agente pode estar marcando um horário.</h2>
+        <p class="calendar-sub">
+          Assim que o cliente confirma um horário no WhatsApp, o agente consulta a agenda
+          real do negócio no Google Calendar e cria o evento na hora — sem ninguém digitando nada.
+        </p>
+        <ul class="calendar-points">
+          <li><span>✓</span> Confere a disponibilidade de cada profissional em tempo real</li>
+          <li><span>✓</span> Cria o evento com nome, telefone e serviço do cliente</li>
+          <li><span>✓</span> Evita horários duplicados ou conflitantes</li>
+          <li><span>✓</span> Sincroniza com a agenda que sua equipe já usa no dia a dia</li>
+        </ul>
+      </div>
+
+      <div class="calendar-visual">
+        <div class="calendar-card">
+          <div class="calendar-toolbar">
+            <span class="calendar-dot red"></span>
+            <span class="calendar-dot yellow"></span>
+            <span class="calendar-dot green"></span>
+            <span class="calendar-month">Agosto 2026</span>
+          </div>
+          <div class="calendar-grid">
+            <div class="calendar-day-label">Qui<br><small>13</small></div>
+            <div class="calendar-day-label calendar-day-active">Sex<br><small>14</small></div>
+            <div class="calendar-day-label">Sáb<br><small>15</small></div>
+
+            <div class="calendar-col">
+              <div class="calendar-slot"></div>
+              <div class="calendar-slot"></div>
+              <div class="calendar-slot"></div>
+            </div>
+            <div class="calendar-col calendar-col-active">
+              <div class="calendar-slot"></div>
+              <div class="calendar-event" id="calendarEvent">
+                <strong>10:00 — Atendimento</strong>
+                <span>Cliente • Studio Bella</span>
+              </div>
+              <div class="calendar-slot"></div>
+            </div>
+            <div class="calendar-col">
+              <div class="calendar-slot"></div>
+              <div class="calendar-slot"></div>
+              <div class="calendar-slot"></div>
+            </div>
+          </div>
+          <div class="calendar-toast" id="calendarToast">
+            <span class="calendar-toast-check">✓</span> Evento criado automaticamente pela IA
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVIÇOS -->
+  <section class="services" id="servicos">
+    <div class="container">
+      <p class="eyebrow center">Serviços</p>
+      <h2 class="center">O que a Dev Bot Verse coloca pra trabalhar no seu negócio</h2>
+
+      <div class="services-grid">
+        <article class="service-card service-card--featured">
+          <span class="service-badge">Produto principal</span>
+          <h3>Agente de IA para WhatsApp</h3>
+          <p>Atendimento humanizado 24/7 que responde clientes, tira dúvidas e agenda horários automaticamente no Google Calendar do seu negócio — sem perder nenhum lead fora do horário comercial.</p>
+          <ul class="service-list">
+            <li>Atendimento instantâneo, dia e noite</li>
+            <li>Agendamento automático no Google Calendar</li>
+            <li>Follow-up de clientes que não confirmaram</li>
+            <li>Conversa natural, sem menu engessado</li>
+          </ul>
+          <a class="btn btn-primary" href="https://wa.me/5511970855092?text=Oi!%20Quero%20saber%20mais%20sobre%20o%20Agente%20de%20IA%20para%20WhatsApp" target="_blank" rel="noopener">Quero um agente assim</a>
+        </article>
+
+        <article class="service-card">
+          <span class="service-badge service-badge--alt">Também fazemos</span>
+          <h3>Automação de Processos (RPA)</h3>
+          <p>Automatizamos tarefas repetitivas do dia a dia do seu negócio — de planilhas a integrações entre sistemas — para sua equipe focar no que realmente importa: o cliente.</p>
+          <ul class="service-list">
+            <li>Eliminação de tarefas manuais e repetitivas</li>
+            <li>Integração entre sistemas e planilhas</li>
+            <li>Relatórios e dashboards automáticos</li>
+            <li>Projeto sob medida para o seu processo</li>
+          </ul>
+          <a class="btn btn-outline" href="https://wa.me/5511970855092?text=Oi!%20Quero%20saber%20mais%20sobre%20automa%C3%A7%C3%A3o%20de%20processos%20(RPA)" target="_blank" rel="noopener">Falar sobre automação</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PARA QUEM -->
+  <section class="audience" id="para-quem">
+    <div class="container">
+      <p class="eyebrow center">Para quem é</p>
+      <h2 class="center">Feito para qualquer negócio que vive de agendamento</h2>
+
+      <div class="audience-grid">
+        <div class="audience-card">
+          <span class="audience-icon">✨</span>
+          <h3>Clínicas Estéticas</h3>
+          <p>Dúvidas sobre procedimentos e valores respondidas na hora — sem perder cliente para quem responde primeiro.</p>
+        </div>
+        <div class="audience-card">
+          <span class="audience-icon">🦷</span>
+          <h3>Consultórios Odontológicos</h3>
+          <p>Pacientes marcam consulta pelo WhatsApp a qualquer hora, com a agenda sempre atualizada em tempo real.</p>
+        </div>
+        <div class="audience-card">
+          <span class="audience-icon">🐾</span>
+          <h3>Petshops</h3>
+          <p>Agenda banho, tosa e consultas veterinárias sem precisar de alguém respondendo o WhatsApp o dia inteiro.</p>
+        </div>
+        <div class="audience-card">
+          <span class="audience-icon">✂️</span>
+          <h3>Salões e Barbearias</h3>
+          <p>Cliente escolhe serviço e horário direto pelo WhatsApp, sem ligação e sem espera na resposta.</p>
+        </div>
+        <div class="audience-card">
+          <span class="audience-icon">🏋️</span>
+          <h3>Academias e Estúdios</h3>
+          <p>Agenda aulas experimentais e atendimentos automaticamente, mesmo fora do horário de expediente.</p>
+        </div>
+        <div class="audience-card">
+          <span class="audience-icon">💬</span>
+          <h3>Outros negócios com agendamento</h3>
+          <p>Se o seu negócio marca horário com cliente, o agente se adapta ao seu processo. Chama no WhatsApp e vamos conversar.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BENEFÍCIOS / NÚMEROS -->
+  <section class="stats">
+    <div class="container stats-grid">
+      <div class="stat">
+        <span class="stat-num">24/7</span>
+        <span class="stat-label">Atendimento sem pausa, todos os dias do ano</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">&lt; 1 min</span>
+        <span class="stat-label">Tempo médio de resposta ao cliente</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">0</span>
+        <span class="stat-label">Leads perdidos por demora no atendimento</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">100%</span>
+        <span class="stat-label">Agendamentos direto no Google Calendar</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <p class="eyebrow center">Dúvidas frequentes</p>
+      <h2 class="center">Antes de chamar no WhatsApp</h2>
+
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>O agente substitui minha recepção por completo?</summary>
+          <p>Não precisa. Ele cuida do primeiro atendimento e do agendamento — sua equipe entra quando o assunto exige um toque humano, sem perder tempo com perguntas repetitivas.</p>
+        </details>
+        <details class="faq-item">
+          <summary>O agente realmente marca o horário sozinho?</summary>
+          <p>Sim. Ele consulta a disponibilidade real da sua agenda e cria o agendamento direto no Google Calendar do seu negócio, sem precisar de ninguém digitando manualmente.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Funciona só para WhatsApp?</summary>
+          <p>O foco principal é o WhatsApp, o canal onde seus clientes já estão. Também desenvolvemos automações (RPA) para outros processos internos do negócio, sob medida.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Serve pra qualquer tipo de negócio?</summary>
+          <p>Se o seu negócio atende com agendamento — clínica, petshop, salão, academia ou qualquer outro serviço — o agente se adapta à sua rotina e ao seu processo de atendimento.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Como faço para começar?</summary>
+          <p>Chama no WhatsApp. A gente entende a rotina do seu negócio e monta uma proposta sob medida para o seu caso.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="cta-final">
+    <div class="container cta-final-inner">
+      <h2>Pare de perder clientes por demora no WhatsApp.</h2>
+      <p>Fale agora com a Dev Bot Verse e veja como um Agente de IA pode atender seu negócio 24 horas por dia.</p>
+      <a class="btn btn-primary btn-lg" href="https://wa.me/5511970855092?text=Oi!%20Quero%20entender%20como%20funciona%20o%20Agente%20de%20IA%20da%20Dev%20Bot%20Verse" target="_blank" rel="noopener">
+        Falar com a Dev Bot Verse agora <span aria-hidden="true">→</span>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <a href="#top" class="brand">
+      <img src="assets/logo.png" alt="" class="brand-mark" width="28" height="28">
+      <span class="brand-name">Dev Bot Verse</span>
+    </a>
+    <p class="footer-tagline">Automação + IA: atendimento e agendamento no WhatsApp, 24/7.</p>
+    <div class="footer-links">
+      <a href="https://wa.me/5511970855092" target="_blank" rel="noopener">WhatsApp</a>
+      <a href="https://instagram.com/devbotverse" target="_blank" rel="noopener">Instagram</a>
+    </div>
+    <p class="footer-copy">© <span id="year"></span> Dev Bot Verse. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/5511970855092?text=Oi!%20Quero%20entender%20como%20funciona%20o%20Agente%20de%20IA%20da%20Dev%20Bot%20Verse" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 32 32" width="28" height="28" fill="currentColor" aria-hidden="true"><path d="M16.02 3C9.4 3 4.02 8.38 4.02 15c0 2.36.66 4.56 1.8 6.44L4 29l7.76-2.02A11.9 11.9 0 0 0 16.02 27C22.64 27 28 21.62 28 15S22.64 3 16.02 3zm0 21.8c-1.98 0-3.83-.55-5.4-1.5l-.39-.23-4.6 1.2 1.23-4.48-.25-.4a9.7 9.7 0 0 1-1.5-5.2c0-5.4 4.4-9.8 9.9-9.8 5.5 0 9.9 4.4 9.9 9.8s-4.4 9.8-9.9 9.8zm5.4-7.34c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.66.15-.2.3-.76.97-.93 1.17-.17.2-.34.22-.63.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.65-2.05-.17-.3-.02-.46.13-.6.13-.13.3-.34.44-.5.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.66-1.6-.9-2.18-.24-.58-.48-.5-.66-.5h-.56c-.2 0-.52.07-.79.37-.27.3-1.03 1-1.03 2.45s1.06 2.85 1.2 3.05c.15.2 2.1 3.2 5.08 4.5.71.3 1.26.49 1.7.62.71.23 1.36.2 1.87.12.57-.08 1.76-.72 2-1.42.25-.7.25-1.3.17-1.42-.07-.13-.27-.2-.56-.35z"/></svg>
+</a>
+
+<script src="js/script.js"></script>
+</body>
+</html>

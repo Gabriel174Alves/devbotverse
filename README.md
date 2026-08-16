@@ -50,4 +50,4 @@ Depois acesse `http://localhost:8090` no navegador.
 
 ## Deploy
 
-Por ser um site estático, pode ser hospedado em qualquer serviço de hospedagem estática (Vercel, Netlify, GitHub Pages, Cloudflare Pages etc.) apontando para a raiz do projeto.
+[Por ser um site estático, pode ser hospedado em qualquer serviço de hospedagem estática (Vercel, Netlify, GitHub Pages, Cloudflare Pages etc.) apontando para a raiz do projeto.](https://devbotverse.netlify.app/)

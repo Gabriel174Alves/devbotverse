@@ -2,6 +2,7 @@
 
 Landing page da **Dev Bot Verse** — Agentes de IA para WhatsApp que atendem clientes e agendam horários automaticamente no Google Calendar, além de automação de processos (RPA).
 
+🌐 Site: [devbotverse.com.br](https://devbotverse.com.br/)
 🔗 Instagram: [@devbotverse](https://instagram.com/devbotverse)
 💬 WhatsApp: [wa.me/5511974729278](https://wa.me/5511974729278)
 
@@ -50,4 +51,4 @@ Depois acesse `http://localhost:8090` no navegador.
 
 ## Deploy
 
-[Por ser um site estático, pode ser hospedado em qualquer serviço de hospedagem estática (Vercel, Netlify, GitHub Pages, Cloudflare Pages etc.) apontando para a raiz do projeto.](https://devbotverse.netlify.app/)
+Por ser um site estático, pode ser hospedado em qualquer serviço de hospedagem estática (Vercel, Netlify, GitHub Pages, Cloudflare Pages etc.) apontando para a raiz do projeto. Hoje está hospedado na Netlify (deploy automático a partir da branch `main`), servido no domínio próprio [devbotverse.com.br](https://devbotverse.com.br/).

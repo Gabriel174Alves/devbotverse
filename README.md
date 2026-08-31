@@ -3,7 +3,7 @@
 Landing page da **Dev Bot Verse** — Agentes de IA para WhatsApp que atendem clientes e agendam horários automaticamente no Google Calendar, além de automação de processos (RPA).
 
 🔗 Instagram: [@devbotverse](https://instagram.com/devbotverse)
-💬 WhatsApp: [wa.me/5511970855092](https://wa.me/5511970855092)
+💬 WhatsApp: [wa.me/5511974729278](https://wa.me/5511974729278)
 
 ## Sobre o projeto
 

@@ -19,6 +19,7 @@
   --radius-sm: 10px;
   --shadow-glow: 0 0 40px rgba(57, 255, 176, 0.12);
   --max-width: 1160px;
+  --section-tint: rgba(15, 21, 19, 0.55);
 }
 
 /* ---------- Reset ---------- */
@@ -37,6 +38,16 @@ a { color: inherit; text-decoration: none; }
 h1, h2, h3 { font-family: var(--font-display); line-height: 1.15; margin: 0 0 0.5em; }
 p { margin: 0 0 1em; color: var(--text-dim); }
 ul { margin: 0; padding: 0; list-style: none; }
+
+/* ---------- Fundo 3D (Three.js) ---------- */
+#universe {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+}
 
 .skip-link {
   position: absolute;
@@ -171,8 +182,7 @@ h2.center { max-width: 640px; }
 .hero {
   padding: 72px 0 96px;
   background:
-    radial-gradient(600px 400px at 85% 10%, var(--accent-soft), transparent 60%),
-    var(--bg);
+    radial-gradient(600px 400px at 85% 10%, var(--accent-soft), transparent 60%);
 }
 .hero-inner {
   display: grid;
@@ -313,7 +323,7 @@ h2.center { max-width: 640px; }
 }
 
 /* ---------- Pain ---------- */
-.pain { background: var(--bg-alt); }
+.pain { background: var(--section-tint); }
 .pain h2 {
   max-width: 620px;
   font-size: clamp(1.6rem, 3vw, 2.1rem);
@@ -359,7 +369,7 @@ h2.center { max-width: 640px; }
 .how-card p { font-size: 0.9rem; margin: 0; }
 
 /* ---------- Calendar (Google Calendar integration) ---------- */
-.calendar-section { background: var(--bg-alt); }
+.calendar-section { background: var(--section-tint); }
 .calendar-inner {
   display: grid;
   grid-template-columns: 0.95fr 1.05fr;
@@ -491,7 +501,7 @@ h2.center { max-width: 640px; }
 @keyframes calendar-toast-in { to { transform: translateY(0); opacity: 1; } }
 
 /* ---------- Services ---------- */
-.services { background: var(--bg-alt); }
+.services { background: var(--section-tint); }
 .services-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -561,7 +571,7 @@ h2.center { max-width: 640px; }
 
 /* ---------- Stats ---------- */
 .stats {
-  background: linear-gradient(135deg, var(--accent-soft), transparent 70%), var(--bg);
+  background: linear-gradient(135deg, var(--accent-soft), transparent 70%), rgba(10, 14, 15, 0.45);
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
 }
@@ -621,7 +631,7 @@ h2.center { max-width: 640px; }
 
 /* ---------- CTA final ---------- */
 .cta-final {
-  background: radial-gradient(700px 300px at 50% 0%, var(--accent-soft), transparent 70%), var(--bg-alt);
+  background: radial-gradient(700px 300px at 50% 0%, var(--accent-soft), transparent 70%), var(--section-tint);
   text-align: center;
 }
 .cta-final-inner { max-width: 640px; margin: 0 auto; }
@@ -631,7 +641,7 @@ h2.center { max-width: 640px; }
 .site-footer {
   padding: 48px 0;
   border-top: 1px solid var(--border);
-  background: var(--bg);
+  background: rgba(10, 14, 15, 0.8);
 }
 .footer-inner {
   display: flex;

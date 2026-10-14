@@ -29,6 +29,7 @@ Site estático, sem build step:
 - HTML5
 - CSS3 (variáveis CSS, Grid e Flexbox, tema dark com acento verde/ciano neon)
 - JavaScript vanilla (scroll suave, menu mobile, animações on-scroll)
+- [Three.js](https://threejs.org/) via CDN (campo de estrelas animado no fundo)
 
 ## Estrutura
 
@@ -36,6 +37,7 @@ Site estático, sem build step:
 index.html      # marcação e conteúdo de todas as seções
 css/style.css    # identidade visual e responsividade
 js/script.js     # interatividade (menu, header, animações)
+js/universe.js   # fundo de estrelas com Three.js
 assets/logo.png  # logo da marca
 ```
 
